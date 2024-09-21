@@ -74,7 +74,22 @@ export default function ItemList(){
       };
     return(
         <ul className="mt-4">
-            {Item(item1.name,item1.quantity,item1.category)}
+            <Item name={item1.name} quantity={item1.quantity} category={item1.category}></Item>
+            <Item name={item2.name} quantity={item2.quantity} category={item2.category}></Item>
+            <Item name={item3.name} quantity={item3.quantity} category={item3.category}></Item>
+            <Item name={item4.name} quantity={item4.quantity} category={item4.category}></Item>
+            <Item name={item5.name} quantity={item5.quantity} category={item5.category}></Item>
+            <Item name={item6.name} quantity={item6.quantity} category={item6.category}></Item>
+            <Item name={item7.name} quantity={item7.quantity} category={item7.category}></Item>
+            <Item name={item8.name} quantity={item8.quantity} category={item8.category}></Item>
+            <Item name={item9.name} quantity={item9.quantity} category={item9.category}></Item>
+            <Item name={item10.name} quantity={item10.quantity} category={item10.category}></Item>
+            <Item name={item11.name} quantity={item11.quantity} category={item11.category}></Item>
+            <Item name={item12.name} quantity={item12.quantity} category={item12.category}></Item>
+
+            
+            
+            {/* {Item(item1.name,item1.quantity,item1.category)}
             {Item(item2.name,item2.quantity,item2.category)}
             {Item(item3.name,item3.quantity,item3.category)}
             {Item(item4.name,item4.quantity,item4.category)}
@@ -85,7 +100,7 @@ export default function ItemList(){
             {Item(item9.name,item9.quantity,item9.category)}
             {Item(item10.name,item10.quantity,item10.category)}
             {Item(item11.name,item11.quantity,item11.category)}
-            {Item(item12.name,item12.quantity,item12.category)}
+            {Item(item12.name,item12.quantity,item12.category)} */}
 
         </ul>
     );

@@ -10,6 +10,9 @@ export default function Home() {
       <Link href={"http://localhost:3000/week-3"}>Week-3 page</Link>
       <br></br>
       <Link href={"http://localhost:3000/week-4"}>Week-4 page</Link>
+      <br></br>
+      <Link href={"http://localhost:3000/week-5"}>Week-5 page</Link>
+   
     </main>
     
   );

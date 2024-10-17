@@ -1,23 +1,38 @@
 "use client";
 import { React } from "react";
 import { useState } from "react";
-export default function NewItem({setItems=()=>{}}) {
+export default function NewItem({OnAddItems=()=>{}}) {
     const[quantity, setQuantity] = useState(1);
     const[name,setName] = useState("");
     const[category,setCategory] = useState("produce");
-
+    const[id,setId] = useState("");
+    
     const handleSubmission=(e)=>{
         e.preventDefault();
+        setId(generateId());
         const item={
             name,
             category,
-            quantity
+            quantity,
+            id
         }
-        console.log(item);
-        setItems((prevItems)=>[...prevItems,item]);
+        
+        OnAddItems(item);
+        
         setQuantity(1);
         setName("");
         setCategory("produce");
+        setId("");
+    }
+    let generateId=()=>{
+        const characters = '0123456789abcdef'; 
+        let result = '';
+      
+        for (let i = 0; i < length; i++) {
+          const randomIndex = Math.floor(Math.random() * characters.length);
+          result += characters[randomIndex];
+        }
+        return result;
     }
     let increment = () => {
         if(quantity>=20){

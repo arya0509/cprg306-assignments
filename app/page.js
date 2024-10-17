@@ -14,6 +14,8 @@ export default function Home() {
       <Link className="hover:text-green-600" href={"http://localhost:3000/week-5"}>Week-5 page</Link>
       <br></br>
       <Link className="hover:text-green-600" href={"http://localhost:3000/week-6"}>Week-6 page</Link>
+      <br></br>
+      <Link className="hover:text-green-600" href={"http://localhost:3000/week-7"}>Week-7 page</Link>
    
     </main>
     
